@@ -12,7 +12,7 @@ Para poder entender mejor la estructura que queremos desarrollar podemos observa
 
 ![diseño](https://github.com/Ariacus/DMZ-Dual-Firewall/blob/master/dise%C3%B1o.png)
 
-En éste diseño los elementos que implementaremos serán 6 (2 Pc's, 2 routers y 2 servidores) obviaremos los switches pues en nuestro caso no serán necesarios.
+En éste diseño los elementos que implementaremos serán 6 (2 Pc's, 2 firewall y 2 servidores) obviaremos los switches pues en nuestro caso no serán necesarios.
 
 En concreto crearemos 6 máquinas virtuales, todas ellas con ubuntu server (en los Pc's no es necesario que el sistema operativo sea de tipo servidor). Desde los siguentes enlaces podremos descargar ubuntu, tanto [server](http://www.ubuntu.com/download/server) como [desktop](http://www.ubuntu.com/download/desktop).
 
