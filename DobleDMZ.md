@@ -4,7 +4,7 @@ A continuación vamos a detallar paso a paso como realizar una configuración de
 
 **¿Que es un DMZ Doble?**
 
-Un DMZ o zona desmilitarizada, es una zona segura que se ubica entre la red interna de una organización y una red externa, generalmente en Internet.
+Un DMZ o zona desmilitarizada (doble), es una zona segura que se ubica entre la red interna de una organización y una red externa, generalmente en Internet.
 
 El objetivo de una DMZ es que las conexiones desde la red interna y la externa a la DMZ estén permitidas, mientras que en general las conexiones desde la DMZ solo se permitan a la red externa.
 
