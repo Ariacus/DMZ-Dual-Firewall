@@ -144,21 +144,25 @@ Siguiendo el esquema que marcamos al principio se necesitarán 4 redes distintas
 **Red 0**
 
 Identificada por la dirección de red: 192.168.1.0
+
 A ésta red pertenecen la máquina Internet-Cliente y una interfaz de la máquina Firewall-Norte.
 
 **Red 1**
 
 Identificada por la dirección de red: 172.16.2.0
+
 A ésta red pertenecen la máquina Server-Web y una interfaz de la máquina Firewall-Norte.
 
 **Red 2**
 
 Identificada por la dirección de red: 172.16.3.0
+
 A ésta red pertenecen la máquina Server-Web ,Server-App y una interfaz de la máquina Firewall-Sur.
 
 **Red 3**
 
 Identificada por la dirección de red: 192.168.2.0
+
 A ésta red pertenecen la máquina Empresa-Cliente y una interfaz de la máquina Firewall-Sur.
 
 A la hora de realizar la configuración de las direcciones en equipos que tengan dos tarjetas, debemos de prestar atención en asignar la dirección a la interfaz correcta. 
