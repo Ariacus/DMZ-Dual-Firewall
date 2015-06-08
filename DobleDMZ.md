@@ -12,7 +12,7 @@ Para poder entender mejor la estructura que queremos desarrollar podemos observa
 
 ![diseño](https://github.com/Ariacus/DMZ-Dual-Firewall/blob/master/dise%C3%B1o.png)
 
-En éste diseño los elementos que implementaremos serán 6 (2 Pc's, 2 firewall y 2 servidores) obviaremos los switches pues en nuestro caso no serán necesarios.
+En éste diseño los elementos que implementaremos serán 6 (2 Pc's, 2 firewall's y 2 servidores) obviaremos los switches pues en nuestro caso no serán necesarios.
 
 En concreto crearemos 6 máquinas virtuales, todas ellas con ubuntu server (en los Pc's no es necesario que el sistema operativo sea de tipo servidor). Desde los siguentes enlaces podremos descargar ubuntu, tanto [server](http://www.ubuntu.com/download/server) como [desktop](http://www.ubuntu.com/download/desktop).
 
@@ -304,7 +304,20 @@ Con esa línea le estamos diciendo que para poder llegar a la red 172.16.3.0 tie
 
 ![rcLocal_empresaCliente](https://github.com/Ariacus/DMZ-Dual-Firewall/blob/master/EmpresaCliente/rcLocal_empresaCliente.png)
 
-Una vez añadidas todas las reglas de enrutamiento podemos comprobar su funcionamiento haciendo un ping entre la máquina Internet-Cliente y Server-Web. Y otro entre la máquina Empresa-Cliente y Server-Web o Server-App. En cualquier caso si todo se ha realizado de forma correcta los ping nos devolverán una respuesta positiva.
+Si queremos comprobar que las reglas son correctas podremos verlas ejecutando el siguiente comando en cada una de las máquinas.
+
+   > route -n
+
+
+Una vez añadidas todas las reglas de enrutamiento podemos comprobar su funcionamiento haciendo un ping entre la máquina Internet-Cliente y Server-Web. Y otro entre la máquina Empresa-Cliente y Server-Web o Server-App. En cualquier caso si todo se ha realizado de forma correcta los ping nos devolverán una respuesta positiva como podemos ver en las siguientes imágenes.
+
+![traceroute1](https://github.com/Ariacus/DMZ-Dual-Firewall/blob/master/imagenesPruebas/TRACEROUTE_Empresa_a_Sweb.png)
+
+![traceroute2](https://github.com/Ariacus/DMZ-Dual-Firewall/blob/master/imagenesPruebas/TRACEROUTE_Internet_a_Sweb.png)
+
+![traceroute3](https://github.com/Ariacus/DMZ-Dual-Firewall/blob/master/imagenesPruebas/TRACEROUTE_Empresa_a_Sapp.png)
+
+![curl_empresa_SWeb](https://github.com/Ariacus/DMZ-Dual-Firewall/blob/master/imagenesPruebas/CURL_Empresa_a_Sweb.png)
 
 
 ###Configurando los Firewall's
